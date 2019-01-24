@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  mtproxy:
+    build: .
+    container_name: mtproxy
+    restart: always
+    ports:
+      - 44334:443
+    volumes:
+      - ./config:/data
+    environment:
+      - SECRET_COUNT=1
