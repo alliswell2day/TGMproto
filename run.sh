@@ -83,8 +83,8 @@ echo "[*] Final configuration:"
 I=1
 echo "$SECRET" | tr ',' '\n' | while read S; do
   echo "[*]   Secret $I: dd$S"
-  echo "[*]   tg:// link for secret $I auto configuration: tg://proxy?server=${IP}&port=443&secret=dd${S}"
-  echo "[*]   t.me link for secret $I: https://t.me/proxy?server=${IP}&port=443&secret=dd${S}"
+  echo "[*]   tg:// link for secret $I auto configuration: tg://proxy?server=${IP}&port=9000&secret=dd${S}"
+  echo "[*]   t.me link for secret $I: https://t.me/proxy?server=${IP}&port=9000&secret=dd${S}"
   I=$(($I+1))
 done
 
